@@ -23,12 +23,36 @@ body {
     margin: 2%;
 }
 
-.store-tittle {
-     font-family: sans-serif;
-     text-align:center;
-     text-transform: uppercase;
-     font-size: 70%;
+.store-title {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70%;
 }
+
 /* Section 1 */
 
+.intro {
+    width: auto;
+    height: 200px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10%;
+    background-color: beige;
+}
 
+.intro,
+h2,
+p {
+    font-family: sans-serif;
+}
+
+.visit-store {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: coral;
+    border: none;
+    margin: 30px 0px;
+    cursor: pointer;
+}
