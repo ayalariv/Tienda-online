@@ -6,9 +6,16 @@ body {
 .container-header {
     display: flex;
     align-items: center;
-    background-color: bisque;
+    background-color: rgb(245, 247, 249);
     justify-content: space-between;
+}
 
+.inicio {
+    margin: 0px 20px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    color: rgb(149, 170, 155);
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .shopping-cart {
@@ -18,9 +25,9 @@ body {
 }
 
 .logo-shop {
-    width: 25%;
-    height: auto;
-    margin: 2%;
+    width: 100px;
+    height: 50px;
+    margin: 4% 3%;
 }
 
 .store-title {
@@ -30,29 +37,223 @@ body {
     font-size: 70%;
 }
 
+/* boton de visitar tienda */
+
+.Buttons {
+    width: 170px;
+    height:45px;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(201, 134, 92);
+    border: none;
+    margin-top:30px;
+}
+
+.Buttons:hover {
+    color: black;
+    background-color: rgb(148, 151, 150);
+    transition: 600ms;
+}
+
+
 /* Section 1 */
 
 .intro {
-    width: auto;
-    height: 200px;
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 10%;
-    background-color: beige;
+    align-items: center;
+    width: auto;
+    height: 250px;
+    padding: 15% 0%;
+    background-color: rgb(235, 237, 239);
 }
 
-.intro,
-h2,
-p {
-    font-family: sans-serif;
+.intro h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:  rgb(38, 63, 56);
+}
+.intro h4 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(38, 63, 56);
+    font-size: 20px;
 }
 
-.visit-store {
-    width: 150px;
-    height: 40px;
+/* Categoria favorita */
+
+.category-title h1 {
+     font-family: "Alice", serif;
+     font-weight: 400;
+     text-align: center;
+     color: rgb(38, 63, 56);
+     font-size: 36px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top:60px;
+     padding-bottom: 90px;
+}
+
+/* Card de cada producto Damas */
+
+.ItemCard {
+    display: flex;
+    justify-content: center;
+    padding: 0px 17px;
+    height: 80%;
+}
+
+.Product-image-damas {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./media/Ropa-de-mujer.png');
+    background-size: cover;
+}
+
+.info-product {
+    margin-left: 20px;
+    margin-top: 120px;
+    font-weight: bolder;
     color: white;
-    background-color: coral;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info-product h3 {
+    font-family: "Alice", serif;
+     font-weight: 400;
+     font-size: 30px;
+} 
+
+.info-product p {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+     font-weight: 400;
+     font-size: 15px;
+} 
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card de cada producto camisetas */
+
+.ItemCard {
+    display: flex;
+    justify-content: center;
+    padding: 0px 17px;
+    height: 80%;
+}
+
+.Product-image-camisetas {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./media/Camisetas.png');
+    background-size: cover;
+}
+
+.info-product {
+    margin-left: 20px;
+    margin-top: 120px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info-product h3 {
+    font-family: "Alice", serif;
+     font-weight: 400;
+     font-size: 30px;
+} 
+
+.info-product p {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+     font-weight: 400;
+     font-size: 15px;
+} 
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card de cada producto Accesorios */
+
+.ItemCard {
+    display: flex;
+    justify-content: center;
+    padding: 0px 17px;
+    height: 80%;
+}
+
+.Product-image-accesorios {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./media/Accesorios-para-mujer.png');
+    background-size: cover;
+}
+
+.info-product {
+    margin-left: 20px;
+    margin-top: 120px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info-product h3 {
+    font-family: "Alice", serif;
+     font-weight: 400;
+     font-size: 30px;
+} 
+
+.info-product p {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+     font-weight: 400;
+     font-size: 15px;
+} 
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Boton de añadir al carrito */
+
+.Button-de-añadir {
+    width: 140px;
+    height: 45px;
+    color: white;
+    background-color: rgb(201, 134, 92);
     border: none;
-    margin: 30px 0px;
-    cursor: pointer;
+    margin-top:20px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+
+}
+
+.Button-de-añadir:hover {
+    color: black;
+    background-color: rgb(148, 151, 150);
+    transition: 600ms;
+}
+
+/* Nuestros productos */
+
+.nuestros-produtos {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 60px 0px;
+}
+
+/* Nuestros productos */
+
+.nuestros-produtos {
+    font-family: "Alice", serif;
+     font-weight: 400;
+     color: rgb(38, 63, 56);
+     font-size: 36px;
 }
